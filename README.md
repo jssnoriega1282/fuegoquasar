@@ -8,6 +8,9 @@ portacarga imperial a la deriva en un campo de asteroides. El manifiesto de la n
 es ultra clasificado, pero se rumorea que transporta raciones y armamento para una
 legión entera.
 
+# Instalación:
+       git clone https://github.com/jssnoriega1282/fuegoquasar.git
+
 ## Descripción
 **Este proyecto fue creado con las siguientes tecnologías:**
 - **Java 11**
@@ -54,7 +57,7 @@ La respuesta del servicio es código **200** si es exitosa la triangulación de 
     "message": "este es un mensaje secreto "
 }
 ```
--**topsecret_split(Post)**: Obtiene la posción de un satelite pasando como filtro la distancia con la nave imperial y el mensaje interceptado. A continuación el JSON de ejemplo para hacer la solicitud:
+- **topsecret_split(Post)**: Obtiene la posción de un satelite pasando como filtro la distancia con la nave imperial y el mensaje interceptado. A continuación el JSON de ejemplo para hacer la solicitud:
 URL: https://testcarga-3146c.uc.r.appspot.com/api/topsecret_split
 ```json
 {    
@@ -77,7 +80,7 @@ Si no hay coincidencia con los datos de búsqueda se retorna código **404** y s
 No hay suficiente información
 ```
 
--**topsecret_split/{satellite_name}(Get)**: Obtiene la posición de un satelite rebelde de acuerdo al nombre ingresado en la variable "***satellite_name***". Si el nombre del satelite consultado existe en el servicio entonces se retorna código **200** con el siguiente JSON:
+- **topsecret_split/{satellite_name}(Get)**: Obtiene la posición de un satelite rebelde de acuerdo al nombre ingresado en la variable "***satellite_name***". Si el nombre del satelite consultado existe en el servicio entonces se retorna código **200** con el siguiente JSON:
 URL: https://testcarga-3146c.uc.r.appspot.com/api/topsecret_split/sato
 ```json
 {
